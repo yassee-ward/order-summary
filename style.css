@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600;1,700&family=Jost:wght@600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Red+Hat+Display:wght@500;700;900&display=swap");
+/*# sourceMappingURL=style.css.map */
+
+body{ 
+    font-size: 16px;
+    font-family: "red hat display" ,sans-serif;
+    background-image: url(/order-summary-component-main/images/pattern-background-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card{
+    max-width: 450px;
+    max-height:  700px;;
+    margin: 100px auto;
+    text-align: center;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 15px 50px rgb(184 184 184) ;
+}
+.girl{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.main{
+    padding: 30px;
+}
+.title{
+    color:  hsl(223, 47%, 23%);
+
+}
+.description{
+    margin:20px auto;
+    width: 80%;
+    font-weight: 400;
+    letter-spacing: O.6px;
+    font-size: 0.9em;
+    color: hsl(224, 23%, 55%);
+}
+.plan{
+    width: 80%;
+    margin: auto;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(2;1fr);
+    grid-template-areas:
+    "music anuel change"
+    "music price change"
+       ;
+}
+.music-icon{
+    grid-area: music;
+    margin: auto;
+}
+.anuel-plan{
+    grid-area: anuel;
+    color:  hsl(223, 47%, 23%);
+    text-align: left;
+    
+    margin-top: 10%;
+    font-size: 16px;
+    letter-spacing: -0.6px;
+    
+}
+.price{
+    grid-area: price;
+    font-size: 16px;
+    font-weight: 100;
+    color: hsl(224, 23%, 55%);
+    text-align: left;
+    margin-top: -3.5%;
+}
+.change{
+    grid-area: change;
+    color: hsl(245, 75%, 52%);
+    margin: auto;
+}
+.link{
+    text-decoration: none;
+    font-weight: 900;
+    color: white;
+}
+.buttons{
+    text-align: center;
+}
+.btn{
+    width: 80%;
+    background-color: hsl(245, 75%, 52%);
+    height: 45px;
+    border-radius: 15px;
+    text-decoration: none;
+    border: 0px;
+    margin-top: 30px;
+    margin-bottom: 35px;
+    box-shadow: 0px 20px 30px rgb(184 184 184);
+    transition:1s ease;
+}
+.cancel{
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    font-size: 1em;
+    font-weight: 600;
+}
+.attribution{
+    margin-top: 25px;
+    padding: 40px auto;
+}
+.btn:hover{
+    background-color:  #766cf1;
+    transform: scale(1.2);
+}
+.change:hover{
+    color:  hsl(223, 47%, 23%);
+}
+.cancel:hover{
+    color: black;
+}
+@media screen and (max-width:500px){
+body{
+    max-width: 375px;
+}
+.card{
+    width: 375px;
+    margin: auto;
+    background-size: cover;
+}
+.card .girl {
+    width: 375px;
+}
+
+
+}
